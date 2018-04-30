@@ -96,5 +96,5 @@
     "test": "jest"
   },
   "typings": "./index.d.ts",
-  "version": "1.4.3"
+  "version": "1.4.4"
 }
