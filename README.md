@@ -10,7 +10,7 @@ This package is greatly inspired by [@jayesbe](https://github.com/jayesbe)'s ama
     - or -
     yarn add react-native-cached-image
 
-We use [`react-native-fetch-blob`](https://github.com/wkh237/react-native-fetch-blob#installation) to handle file system access in this package and it requires an extra step during the installation.  
+We use [`rn-fetch-blob`](https://github.com/wkh237/react-native-fetch-blob#installation) to handle file system access in this package and it requires an extra step during the installation.  
 
 _You should only have to do this once._
 

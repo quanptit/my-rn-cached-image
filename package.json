@@ -1,31 +1,39 @@
 {
-  "_from": "react-native-cached-image",
-  "_id": "react-native-cached-image@1.4.3",
+  "_args": [
+    [
+      "git+https://gitlab.com/ReactNativeLib/react-native-cached-image.git",
+      "S:\\Codes\\writing-studio\\hindi-writing"
+    ]
+  ],
+  "_from": "git+https://gitlab.com/ReactNativeLib/react-native-cached-image.git",
+  "_id": "react-native-cached-image@git+https://gitlab.com/ReactNativeLib/react-native-cached-image.git#56d4e4ed87faa373e25919a15dcc0073620897f7",
   "_inBundle": false,
-  "_integrity": "sha1-CULizQeChKHwQ43o3+F/Kzaol1I=",
+  "_integrity": "",
   "_location": "/react-native-cached-image",
   "_phantomChildren": {
-    "fbjs": "0.8.16",
-    "loose-envify": "1.3.1"
+    "base-64": "0.1.0",
+    "fs.realpath": "1.0.0",
+    "inflight": "1.0.6",
+    "inherits": "2.0.3",
+    "minimatch": "3.0.4",
+    "once": "1.4.0",
+    "path-is-absolute": "1.0.1"
   },
   "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "react-native-cached-image",
-    "name": "react-native-cached-image",
-    "escapedName": "react-native-cached-image",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
+    "type": "git",
+    "raw": "git+https://gitlab.com/ReactNativeLib/react-native-cached-image.git",
+    "rawSpec": "git+https://gitlab.com/ReactNativeLib/react-native-cached-image.git",
+    "saveSpec": "git+https://gitlab.com/ReactNativeLib/react-native-cached-image.git",
+    "fetchSpec": "https://gitlab.com/ReactNativeLib/react-native-cached-image.git",
+    "gitCommittish": null
   },
   "_requiredBy": [
-    "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/react-native-cached-image/-/react-native-cached-image-1.4.3.tgz",
+  "_resolved": "git+https://gitlab.com/ReactNativeLib/react-native-cached-image.git#56d4e4ed87faa373e25919a15dcc0073620897f7",
   "_shasum": "0942e2cd078284a1f0438de8dfe17f2b36a89752",
-  "_spec": "react-native-cached-image",
-  "_where": "/Users/ptran/codes/react_native/1news/TiengTrung/HSKTest",
+  "_spec": "git+https://gitlab.com/ReactNativeLib/react-native-cached-image.git",
+  "_where": "S:\\Codes\\writing-studio\\hindi-writing",
   "author": {
     "name": "kfiroo",
     "email": "kfirgolan@gmail.com"
@@ -39,7 +47,7 @@
     "lodash": "^4.17.4",
     "prop-types": "^15.5.10",
     "react-native-clcasher": "^1.0.0",
-    "react-native-fetch-blob": "^0.10.8",
+    "rn-fetch-blob": "^0.10.8",
     "url-parse": "^1.1.9"
   },
   "deprecated": false,
