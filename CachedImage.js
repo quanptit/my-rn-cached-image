@@ -47,6 +47,7 @@ class CachedImage extends React.Component {
         renderImage: PropTypes.func.isRequired,
         activityIndicatorProps: PropTypes.object.isRequired,
         taskQueueImage: PropTypes.object,
+        hideLoadingIndicator:PropTypes.Bool,
         // ImageCacheManager options
         ...ImageCacheManagerOptionsPropTypes,
     };
@@ -54,6 +55,7 @@ class CachedImage extends React.Component {
     static defaultProps = {
         renderImage: props => (<ImageBackground imageStyle={props.style} ref={CACHED_IMAGE_REF} {...props} />),
         activityIndicatorProps: {},
+        hideLoadingIndicator: true
     };
 
     static contextTypes = {
@@ -223,6 +225,7 @@ class CachedImage extends React.Component {
             key: source.uri,
             source,
             children: (
+                this.props.hideLoadingIndicator ? null : (
                 LoadingIndicator
                     ? <View style={[imageStyle, activityIndicatorStyle]}>
                         <LoadingIndicator {...activityIndicatorProps} />
@@ -230,6 +233,7 @@ class CachedImage extends React.Component {
                     : <ActivityIndicator
                         {...activityIndicatorProps}
                         style={activityIndicatorStyle}/>
+                )
             )
         });
     }
