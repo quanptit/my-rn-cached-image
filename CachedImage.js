@@ -47,7 +47,7 @@ class CachedImage extends React.Component {
         renderImage: PropTypes.func.isRequired,
         activityIndicatorProps: PropTypes.object.isRequired,
         taskQueueImage: PropTypes.object,
-        hideLoadingIndicator:PropTypes.Bool,
+        hideLoadingIndicator:PropTypes.bool,
         // ImageCacheManager options
         ...ImageCacheManagerOptionsPropTypes,
     };
