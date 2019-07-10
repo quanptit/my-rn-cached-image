@@ -1,4 +1,5 @@
 # react-native-cached-image
+AndroidX
 
 CachedImage component for react-native
 
