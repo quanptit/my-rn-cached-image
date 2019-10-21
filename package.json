@@ -18,7 +18,7 @@
     "type": "git",
     "url": "https://github.com/quanptit/my-rn-cached-image.git"
   },
-  "nativePackage": true,
+  "nativePackage": false,
   "dependencies": {
     "crypto-js": "^3.1.9-1",
     "lodash": "^4.17.4",
