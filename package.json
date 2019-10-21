@@ -18,14 +18,16 @@
     "type": "git",
     "url": "https://github.com/quanptit/my-rn-cached-image.git"
   },
-  "nativePackage": false,
+  "nativePackage": true,
   "dependencies": {
-    "@react-native-community/netinfo": "^4.0.0",
     "crypto-js": "^3.1.9-1",
     "lodash": "^4.17.4",
     "prop-types": "^15.5.10",
     "react-native-clcasher": "^1.0.0",
-    "rn-fetch-blob": "0.10.13",
     "url-parse": "^1.1.9"
+  },
+  "peerDependencies": {
+    "@react-native-community/netinfo": "^4.0.0",
+    "rn-fetch-blob": "0.10.13"
   }
 }
