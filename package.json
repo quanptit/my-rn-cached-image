@@ -1,109 +1,31 @@
 {
-  "_args": [
-    [
-      "git+https://gitlab.com/ReactNativeLib/react-native-cached-image.git",
-      "S:\\Codes\\writing-studio\\hindi-writing"
-    ]
-  ],
-  "_from": "git+https://gitlab.com/ReactNativeLib/react-native-cached-image.git",
-  "_id": "react-native-cached-image@git+https://gitlab.com/ReactNativeLib/react-native-cached-image.git#56d4e4ed87faa373e25919a15dcc0073620897f7",
-  "_inBundle": false,
-  "_integrity": "",
-  "_location": "/react-native-cached-image",
-  "_phantomChildren": {
-    "base-64": "0.1.0",
-    "fs.realpath": "1.0.0",
-    "inflight": "1.0.6",
-    "inherits": "2.0.3",
-    "minimatch": "3.0.4",
-    "once": "1.4.0",
-    "path-is-absolute": "1.0.1"
+  "name": "my-rn-cached-image",
+  "version": "1.4.3",
+  "description": "my-rn-cached-image",
+  "main": "index.js",
+  "scripts": {
+    "install_npm": "yarn install",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "_requested": {
+  "keywords": [
+    "react-native"
+  ],
+  "author": "Quan Trinh Van",
+  "license": "ISC",
+  "homepage": "https://github.com/quanptit/my-rn-cached-imaget",
+  "bugs": "https://github.com/quanptit/my-rn-cached-image/issues",
+  "repository": {
     "type": "git",
-    "raw": "git+https://gitlab.com/ReactNativeLib/react-native-cached-image.git",
-    "rawSpec": "git+https://gitlab.com/ReactNativeLib/react-native-cached-image.git",
-    "saveSpec": "git+https://gitlab.com/ReactNativeLib/react-native-cached-image.git",
-    "fetchSpec": "https://gitlab.com/ReactNativeLib/react-native-cached-image.git",
-    "gitCommittish": null
+    "url": "https://github.com/quanptit/my-rn-cached-image.git"
   },
-  "_requiredBy": [
-    "/"
-  ],
-  "_resolved": "git+https://gitlab.com/ReactNativeLib/react-native-cached-image.git#56d4e4ed87faa373e25919a15dcc0073620897f7",
-  "_shasum": "0942e2cd078284a1f0438de8dfe17f2b36a89752",
-  "_spec": "git+https://gitlab.com/ReactNativeLib/react-native-cached-image.git",
-  "_where": "S:\\Codes\\writing-studio\\hindi-writing",
-  "author": {
-    "name": "kfiroo",
-    "email": "kfirgolan@gmail.com"
-  },
-  "bugs": {
-    "url": "https://github.com/kfiroo/react-native-cached-image/issues"
-  },
-  "bundleDependencies": false,
+  "nativePackage": false,
   "dependencies": {
     "@react-native-community/netinfo": "^4.0.0",
     "crypto-js": "^3.1.9-1",
     "lodash": "^4.17.4",
     "prop-types": "^15.5.10",
     "react-native-clcasher": "^1.0.0",
-    "rn-fetch-blob": "^0.10.8",
+    "rn-fetch-blob": "0.10.13",
     "url-parse": "^1.1.9"
-  },
-  "deprecated": false,
-  "description": "CachedImage component for react-native",
-  "devDependencies": {
-    "babel-jest": "^21.0.2",
-    "babel-preset-env": "*",
-    "babel-preset-react-native": "^3.0.2",
-    "jest": "^21.0.2",
-    "jest-react-native": "^18.0.0",
-    "react": "16.0.0-alpha.12",
-    "react-native": "^0.48.3",
-    "react-test-renderer": "^15.6.1",
-    "regenerator-runtime": "^0.11.0"
-  },
-  "files": [
-    "index.js",
-    "CachedImage.js",
-    "ImageCacheProvider.js",
-    "ImageCacheManager.js",
-    "ImageCacheManagerOptionsPropTypes.js",
-    "ImageCachePreloader.js",
-    "utils/fsUtils.js",
-    "utils/pathUtils.js"
-  ],
-  "homepage": "https://github.com/kfiroo/react-native-cached-image",
-  "jest": {
-    "preset": "react-native",
-    "globals": {
-      "NODE_ENV": "test"
-    },
-    "testPathIgnorePatterns": [
-      "/node_modules/",
-      "/CachedImageExample/"
-    ],
-    "modulePathIgnorePatterns": [
-      "/CachedImageExample/"
-    ],
-    "verbose": true
-  },
-  "keywords": [
-    "react-native",
-    "cache",
-    "image"
-  ],
-  "license": "MIT",
-  "main": "index.js",
-  "name": "react-native-cached-image",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kfiroo/react-native-cached-image.git#1.4.3"
-  },
-  "scripts": {
-    "test": "jest"
-  },
-  "typings": "./index.d.ts",
-  "version": "1.4.3"
+  }
 }
