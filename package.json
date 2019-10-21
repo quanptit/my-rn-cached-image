@@ -1,6 +1,6 @@
 {
   "name": "my-rn-cached-image",
-  "version": "1.4.4",
+  "version": "1.4.5",
   "description": "my-rn-cached-image",
   "main": "index.js",
   "scripts": {
@@ -28,6 +28,6 @@
   },
   "peerDependencies": {
     "@react-native-community/netinfo": "^4.0.0",
-    "rn-fetch-blob": "0.10.13"
+    "rn-fetch-blob": "^0.10.13"
   }
 }
