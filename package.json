@@ -1,10 +1,11 @@
 {
   "name": "my-rn-cached-image",
-  "version": "1.4.6",
+  "version": "1.4.9",
   "description": "my-rn-cached-image",
   "main": "index.js",
   "scripts": {
     "install_npm": "yarn install",
+    "publish_npm": "npm publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -18,7 +19,6 @@
     "type": "git",
     "url": "https://github.com/quanptit/my-rn-cached-image.git"
   },
-  "nativePackage": false,
   "dependencies": {
     "crypto-js": "^3.1.9-1",
     "lodash": "^4.17.4",

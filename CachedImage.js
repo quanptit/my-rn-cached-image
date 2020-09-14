@@ -39,10 +39,8 @@ function getImageProps(props) {
     return _.omit(props, ['source', 'defaultSource', 'fallbackSource', 'LoadingIndicator', 'activityIndicatorProps', 'style', 'useQueryParamsInCacheKey', 'renderImage', 'resolveHeaders']);
 }
 
-const CACHED_IMAGE_REF = 'cachedImage';
-
 class CachedImage extends React.Component {
-
+    CACHED_IMAGE_REF;
     static propTypes = {
         renderImage: PropTypes.func.isRequired,
         activityIndicatorProps: PropTypes.object.isRequired,
@@ -53,7 +51,7 @@ class CachedImage extends React.Component {
     };
 
     static defaultProps = {
-        renderImage: props => (<ImageBackground imageStyle={props.style} ref={CACHED_IMAGE_REF} {...props} />),
+        renderImage: props => (<ImageBackground imageStyle={props.style} ref = {(ref)=>{this.CACHED_IMAGE_REF = ref}} {...props} />),
         activityIndicatorProps: {},
         hideLoadingIndicator: true
     };
@@ -79,7 +77,7 @@ class CachedImage extends React.Component {
         this.renderLoader = this.renderLoader.bind(this);
     }
 
-    componentWillMount() {
+    UNSAFE_componentWillMount() {
         this._isMounted = true;
         NetInfo.isConnected.addEventListener('connectionChange', this.handleConnectivityChange);
         // initial
@@ -98,7 +96,7 @@ class CachedImage extends React.Component {
         NetInfo.isConnected.removeEventListener('connectionChange', this.handleConnectivityChange);
     }
 
-    componentWillReceiveProps(nextProps) {
+    UNSAFE_componentWillReceiveProps(nextProps) {
         if (!_.isEqual(this.props.source, nextProps.source)) {
             this.processSource(nextProps.source);
         }
@@ -106,7 +104,7 @@ class CachedImage extends React.Component {
 
     setNativeProps(nativeProps) {
         try {
-            this.refs[CACHED_IMAGE_REF].setNativeProps(nativeProps);
+            this.CACHED_IMAGE_REF && this.CACHED_IMAGE_REF.setNativeProps(nativeProps);
         } catch (e) {
             console.error(e);
         }
@@ -226,18 +224,17 @@ class CachedImage extends React.Component {
             source,
             children: (
                 this.props.hideLoadingIndicator ? null : (
-                LoadingIndicator
-                    ? <View style={[imageStyle, activityIndicatorStyle]}>
-                        <LoadingIndicator {...activityIndicatorProps} />
-                    </View>
-                    : <ActivityIndicator
-                        {...activityIndicatorProps}
-                        style={activityIndicatorStyle}/>
+                    LoadingIndicator
+                        ? <View style={[imageStyle, activityIndicatorStyle]}>
+                            <LoadingIndicator {...activityIndicatorProps} />
+                        </View>
+                        : <ActivityIndicator
+                            {...activityIndicatorProps}
+                            style={activityIndicatorStyle}/>
                 )
             )
         });
     }
 
 }
-
 module.exports = CachedImage;
